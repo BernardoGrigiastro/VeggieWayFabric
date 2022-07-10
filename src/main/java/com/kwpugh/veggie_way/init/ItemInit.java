@@ -96,7 +96,9 @@ public class ItemInit
 
 	public static final Item ENERGY_BAR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "energy_bar"), new Item(new Item.Settings().food(FoodList.energy_bar).group(VeggieWay.veggie_way)));
 	public static final Item SUPERFOOD_BAR = Registry.register(Registry.ITEM, new Identifier(MOD_ID, "superfood_bar"), new Item(new Item.Settings().food(FoodList.superfood_bar).group(VeggieWay.veggie_way)));
-	public static void init() {
 
+	public static void init()
+	{
+		// just to kick the class at init
 	}
 }

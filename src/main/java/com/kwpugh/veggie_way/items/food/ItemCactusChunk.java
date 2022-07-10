@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -15,6 +16,11 @@ public class ItemCactusChunk extends Item
 	public ItemCactusChunk(Settings properties)
 	{
 		super(properties);
+	}
+
+	public UseAction getUseAction(ItemStack stack)
+	{
+		return UseAction.EAT;
 	}
 
 	@Override

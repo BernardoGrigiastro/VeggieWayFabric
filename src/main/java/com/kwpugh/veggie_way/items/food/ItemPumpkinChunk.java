@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -16,6 +17,11 @@ public class ItemPumpkinChunk extends Item
 	public ItemPumpkinChunk(Settings properties)
 	{
 		super(properties);
+	}
+
+	public UseAction getUseAction(ItemStack stack)
+	{
+		return UseAction.EAT;
 	}
 
 	@Override
